@@ -5,17 +5,26 @@ def gold_room():
 
 	next = raw_input("> ")
 
+	#
+	#if "0" in next or "1" in next:
+	#	how_much = int(next)
+	#else:
+	#	dead("Man, learn to type a number")
 	
-	if "0" in next or "1" in next:
-		how_much = int(next)
-	else:
-		dead("Man, learn to type a number")
+	#if how_much < 50:
+	#	print "Nice, you're not greedy, you win!"
+	#	exit(0)
+	#else:
+	#	dead("You greedy bastard!")
 
-	if how_much < 50:
-		print "Nice, you're not greedy, you win!"
-		exit(0)
+	if next.isdigit():
+		if int(next) < 50:
+			print "Nice, you're not greedy, you win!"
 	else:
-		dead("You greedy bastard!")
+			dead("You greedy bastard!")
+
+
+	
 
 def bear_room():
 	print "There is a bear here"
