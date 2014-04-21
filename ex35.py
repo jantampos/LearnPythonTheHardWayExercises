@@ -4,6 +4,8 @@ def gold_room():
 	print "This room is full of gold. How much do you take?"
 
 	next = raw_input("> ")
+
+	
 	if "0" in next or "1" in next:
 		how_much = int(next)
 	else:
@@ -48,7 +50,7 @@ def cthulhu_room():
 		start()
 	elif "head" in next:
 		dead("Well that was tasty!")
-	else
+	else:
 		cthulhu_room()
 
 def dead(why):
@@ -64,6 +66,11 @@ def start():
 
 	if next == "left":
 		bear_room()
-	elif next ==
+	elif next == "right":
+		cthulhu_room()
+	else:
+		dead("You stumble around the room until you starve")
+
+start()
 
 
