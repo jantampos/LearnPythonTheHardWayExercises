@@ -17,12 +17,19 @@ def gold_room():
 	#else:
 	#	dead("You greedy bastard!")
 
-	if next.isdigit():
+	#if next.isdigit():
+	#	if int(next) < 50:
+	#		print "Nice, you're not greedy, you win!"
+	#else:
+	#		dead("You greedy bastard!")
+
+	try:
 		if int(next) < 50:
 			print "Nice, you're not greedy, you win!"
-	else:
-			dead("You greedy bastard!")
-
+		else:
+			dead("You were to greedy")
+	except ValueError:
+		dead("Man, learn to type a number!")
 
 	
 
