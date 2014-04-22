@@ -11,7 +11,7 @@ render = web.template.render('templates/')
 class Index(object):
 	def GET(self):
 		greeting = "Jan Aubrey Tomada Tampos"
-		return render.foo(greeting = None)
+		return render.foo(greeting = greeting)
 
 if __name__ == "__main__":
 	app.run()
